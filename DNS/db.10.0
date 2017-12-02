@@ -1,0 +1,14 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+0.10.in-addr.arpa	IN	SOA	headnode.gekko.cluster.local root.localhost. (
+					0	; serial
+					64800	; refresh (1 week)
+					86400	; retry (1 day)
+					2419200	; expire (4 weeks)
+					86400	; minimum (1 day)
+					)
+			NS		headnode.gekko.cluster.local.
+$ORIGIN 0.10.in-addr.arpa.
+1.0	IN	PTR	headnode.gekko.cluster.local.
+2.0	IN	PTR	node1.gekko.cluster.local.
+3.0	IN	PTR	node2.argand.cluster.local.
